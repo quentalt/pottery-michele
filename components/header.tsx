@@ -2,30 +2,29 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Search, User, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import Image from "next/image";
 
 const navLinks = [
   { label: "Collection", href: "/collection" },
-  { label: "About", href: "#about" },
-  { label: "Archive", href: "#archive" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Archive", href: "/archive" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 border-b border-border bg-background backdrop-blur supports-[backdrop-filter]:bg-background">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-6 w-6 items-center justify-center">
-<Image src="/images/logo.jpg" width={50} height={50} alt="Logo"/>
-
-          </span>
+            <span className="flex h-6 w-6 items-center justify-center">
+                <Image src="/images/logo.png" width={50} height={50} alt="Logo" />
+            </span>
           <span className="text-lg font-semibold tracking-tight text-foreground">
-            Terra Studio
+            Ogresdelaterre
           </span>
         </Link>
 
@@ -77,22 +76,6 @@ export function Header() {
                 </li>
               ))}
             </ul>
-            <div className="mt-4 flex items-center gap-4 border-t border-border pt-4">
-              <button
-                type="button"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-                aria-label="Rechercher"
-              >
-                <Search className="h-5 w-5" />
-              </button>
-              <Link
-                href="#account"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-                aria-label="Mon compte"
-              >
-                <User className="h-5 w-5" />
-              </Link>
-            </div>
           </nav>
         </div>
       )}

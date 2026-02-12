@@ -24,7 +24,7 @@ const products = [
 
 export function FeaturedCollection() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-16 md:py-24">
+    <section className="mx-auto max-w-7xl px-6 py-16 md:py-24 bg-background">
       {/* Section Header */}
       <div className="flex items-end justify-between border-b border-border pb-4">
         <div>
@@ -39,7 +39,7 @@ export function FeaturedCollection() {
           href="/collection"
           className="text-sm font-medium text-primary transition-colors hover:text-primary/80"
         >
-          {"View All \u2192"}
+          {"Voir Tout \u2192"}
         </Link>
       </div>
 

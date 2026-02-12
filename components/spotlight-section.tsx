@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import {Eye} from "lucide-react";
 
 export function SpotlightSection() {
   return (
@@ -43,24 +44,8 @@ export function SpotlightSection() {
               href="/product"
               className="mt-8 inline-flex w-fit items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary/80"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-4 w-4"
-                  aria-hidden="true"
-                >
-                  <circle cx="12" cy="12" r="3" fill="hsl(30, 20%, 97%)" />
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="6"
-                    stroke="hsl(30, 20%, 97%)"
-                    strokeWidth="1.5"
-                  />
-                </svg>
-              </span>
-              Discover
+              <Eye/>
+              Découvrir
             </Link>
           </div>
         </div>

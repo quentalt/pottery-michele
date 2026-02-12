@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const categories = [
-    "View All",
+    "Voir Tout",
     "Dining Sets",
     "Coffee & Tea",
     "Decor",
@@ -53,10 +53,10 @@ const products = [
 ];
 
 export default function CollectionPage() {
-    const [activeCategory, setActiveCategory] = useState("View All");
+    const [activeCategory, setActiveCategory] = useState("Voir Tout");
 
     const filteredProducts =
-        activeCategory === "View All"
+        activeCategory === "Voir Tout"
             ? products
             : products.filter((p) => p.category === activeCategory);
 
@@ -69,7 +69,7 @@ export default function CollectionPage() {
                 </h1>
                 <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-muted-foreground">
                     {
-                        "Experience the quiet beauty of intentional living. Each piece is hand-thrown in our studio, carrying the unique marks of the maker."
+                        "Goûtez à la beauté paisible d'une vie vécue en pleine conscience. Chaque pièce est façonnée à la main dans notre atelier, portant ainsi la marque unique de son créateur.."
                     }
                 </p>
             </div>
@@ -125,14 +125,14 @@ export default function CollectionPage() {
             </div>
 
             {/* Load More */}
-            <div className="mt-16 flex justify-center">
+           {/* <div className="mt-16 flex justify-center">
                 <button
                     type="button"
                     className="inline-flex h-11 items-center justify-center rounded-full border border-foreground px-8 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
                 >
                     Discover More Pieces
                 </button>
-            </div>
+            </div>*/}
         </div>
     );
 }
