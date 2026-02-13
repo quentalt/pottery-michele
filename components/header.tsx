@@ -20,9 +20,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-6 w-6 items-center justify-center">
                 <Image src="/images/logo.png" width={50} height={50} alt="Logo" />
-            </span>
           <span className="text-lg font-semibold tracking-tight text-foreground">
             Ogresdelaterre
           </span>
